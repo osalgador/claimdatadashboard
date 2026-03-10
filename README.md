@@ -1,63 +1,58 @@
-Descripción del proyecto
+# Dashboard de Análisis de Riesgo en Seguros de Automóviles
 
-Este proyecto analiza un portafolio de seguros de automóviles mediante un dashboard interactivo desarrollado en Power BI.
+## Descripción del proyecto
 
-El objetivo es explorar patrones de reclamaciones y posibles factores de riesgo relacionados con características del cliente, del vehículo y elementos de seguridad.
+Este proyecto presenta un análisis de riesgo en seguros de automóviles mediante un dashboard interactivo desarrollado en **Power BI**.
 
-El dashboard permite identificar tendencias en la frecuencia de reclamaciones y facilita la exploración interactiva de los datos del portafolio.
+El objetivo es identificar patrones de reclamaciones a partir de variables relacionadas con el cliente, el vehículo y sus características de seguridad. A través de este análisis se exploran posibles factores que influyen en la frecuencia de reclamaciones dentro del portafolio.
 
-Tamaño del dataset:
-≈ 59,000 pólizas de seguro.
+## Objetivos
 
-Objetivos del análisis
+- Analizar la **frecuencia de reclamaciones** del portafolio.
+- Identificar diferencias de riesgo por **tipo de combustible**.
+- Comparar la frecuencia de reclamaciones entre **segmentos de vehículos**.
+- Evaluar la relación entre **edad del cliente** y frecuencia de reclamaciones.
+- Analizar el efecto de la **antigüedad del vehículo** sobre el riesgo.
+- Explorar si el **número de bolsas de aire** se relaciona con una menor frecuencia de reclamaciones.
 
-Los principales objetivos del proyecto son:
+## Herramientas utilizadas
 
-Analizar la frecuencia de reclamaciones dentro del portafolio.
+- **Power BI** — desarrollo del dashboard interactivo
+- **Python (Pandas)** — limpieza y preparación de datos
+- **Git y GitHub** — control de versiones y documentación del proyecto
 
-Identificar patrones de riesgo según el segmento del vehículo.
+## Métricas principales
 
-Explorar la relación entre edad del cliente y frecuencia de reclamaciones.
+- **Pólizas totales:** 59 mil
+- **Reclamos totales:** 3748
+- **Frecuencia de reclamos:** 6.40%
+- **Edad promedio de clientes:** 44.82 años
 
-Evaluar cómo la antigüedad del vehículo influye en las reclamaciones.
+## Principales hallazgos
 
-Analizar si las características de seguridad (bolsas de aire) afectan la frecuencia de siniestros.
+- La frecuencia promedio del portafolio es de **6.40%**.
+- El segmento **B2** presenta la mayor frecuencia de reclamaciones.
+- La frecuencia de reclamaciones aumenta en ciertos grupos de mayor edad.
+- Los vehículos con **menor antigüedad** presentan una frecuencia ligeramente mayor.
+- El tipo de combustible no parece mostrar diferencias drásticas en la frecuencia de reclamos.
+- Los vehículos con más bolsas de aire muestran una frecuencia de reclamaciones ligeramente menor.
 
-Construir un dashboard interactivo que permita explorar estos patrones de riesgo.
+## Vista del dashboard
 
-Herramientas utilizadas
+![Vista del dashboard](images/dashboard_preview.png)
 
-Power BI → Visualización de datos y desarrollo del dashboard
+## Estructura del proyecto
 
-Python (Pandas) → Limpieza y preparación de datos
-
-Git y GitHub → Control de versiones y documentación del proyecto
-Métricas principales
-
-El dashboard presenta las siguientes métricas clave:
-
-Pólizas totales: ~59,000
-
-Reclamaciones totales: 3,748
-
-Frecuencia de reclamaciones: 6.40%
-
-Edad promedio de clientes: 44.82 años
-Principales hallazgos
-
-Algunos insights obtenidos del análisis:
-
-La frecuencia promedio de reclamaciones es de aproximadamente 6.4%.
-
-El segmento B2 presenta la mayor frecuencia de reclamaciones dentro del portafolio.
-
-La mayor concentración de reclamaciones ocurre en clientes de 40 a 49 años.
-
-Los vehículos más nuevos (0–2 años) muestran una frecuencia ligeramente mayor de reclamaciones.
-
-El tipo de combustible no parece ser un factor determinante en la frecuencia de siniestros.
-
-Los vehículos con mayor número de bolsas de aire tienden a presentar una frecuencia de reclamaciones ligeramente menor.
- Vista del dashboard
- <img width="1376" height="766" alt="image" src="https://github.com/user-attachments/assets/539b2ea3-c97d-490a-bcfd-84887daec35d" />
-
+```text
+claimdatadashboard
+│
+├── dashboard
+│   └── insurance_risk_dashboard.pbix
+├── data
+│   ├── insurance claims data.csv
+│   └── insurance_dashboard_dataset.csv
+├── images
+│   └── dashboard_preview.png
+├── scripts
+│   └── actuarial_analysis.py
+└── README.md
